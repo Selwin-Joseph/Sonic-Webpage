@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <script src="/script.js"> </script>
+    <title>Sonic Data</title>
+</head>
+<body>
+   
+    <div id="sidebar" style="width: max-content;">
+        <h2>SONIC Data</h2>
+        <ul id="nameList" style="width: max-content;"></ul>
+    </div>
+    
+    <div id="content" style="width: fit-content;">
+        <label id = "grid"></label>
+        <text style="margin-right: 15px;">Grid</text>
+        
+        <label id = "dg"></label>
+        <text style="margin-right: 15px;">DG</text>
+       
+        <label id = "battery"></label>
+        <text style="margin-right: 15px;">Battery</text>
+        
+        <label id = "pv"></label>
+        <text style="margin-right: 15px;">PV</text>
+        
+        <label id = "pvhybridmode"></label>
+        <text style="margin-right: 15px;">PV Hybrid Mode</text> <br>
+       
+        <label id="heading" style="font-weight: bold; margin-right: 50px;"></label>
+
+        <input type="text" id="searchBox" style="margin-bottom: 5px; margin-top: 10px;width: 200px; height: 25px; border-radius: 5px;" placeholder="Search by Parameter Name">
+
+        <div id="tableContainer" style="display: flex; width: fit-content;"></div>
+    
+</body>
+</html>
+

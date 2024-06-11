@@ -1,0 +1,124 @@
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: max-content;
+}
+
+
+#sidebar {
+    font-family: Arial, sans-serif;
+    background-color: #4CAF50;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 12px;
+}
+
+@media print {
+    #sidebar,#searchBox {
+        display: none;
+    }
+}
+
+#content {
+    flex-grow: 1;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.load-flag{
+    background-color:#12AD2B; 
+    width: 12px;
+    height: 12px; 
+     display: inline-grid;
+     margin-left:0px;
+     border-radius: 10px;
+  }
+  .load-flag1{
+    background-color:red; 
+    width: 12px;
+    height: 12px; 
+     display: inline-grid;
+     margin-left:0px;
+     border-radius: 10px;
+  }
+
+table {
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+      border-collapse: collapse;
+     width:fit-content;  
+  }
+
+ul{
+    font-family: Arial, sans-serif;
+    display: contents;
+    width: max-content;
+    cursor: pointer;
+}
+
+li{
+    font-family: Arial, sans-serif;
+    margin-top: 1px;
+}
+
+li:hover, li:active, li.active {
+    text-decoration: underline;
+    color:whitesmoke ; /* Set the text color for the active state */
+    
+}
+
+
+h2{
+    margin-top: 0px;
+}
+
+
+
+th{
+    font-family: Arial, sans-serif;
+    font-size: 13px;;
+    font-weight: bold;
+    background-color: #4CAF50;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      color: white;
+      padding: 4px;
+      text-align: left;
+  
+  }
+  
+  td {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    border: 2px solid #ddd;
+    padding:0px;  /* Adjust this value */
+    text-align: left;
+}
+
+  
+  
+  
+  tr,td:not(:first-child,:last-child){
+      width : 180px;
+      
+  }
+  
+  tr,td:first-child{
+      width: 30px;       
+  }
+
+  
+
+  td:last-child{
+    font-family:  'arial black';
+    font-weight: bolder;
+    color:#000300;
+    font-size: 12px;
+  }
+  
+
