@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <script src="/script.js"> </script>
+
+    <title>Sonic Data</title>
+</head>
+<body>
+   
+    <div id="sidebar" style="width: max-content;">
+        <text style="font-weight: bolder;font-size:25px;">SONIC Data</text>
+        <ul id="nameList" style="width: max-content;"></ul>
+    </div>
+    
+    <div id="content" style="width: fit-content;">
+        <label id = "grid"></label>
+        <text style="margin-right: 15px;">Grid</text>
+        
+        <label id = "dg"></label>
+        <text style="margin-right: 15px;">DG</text>
+       
+        <label id = "battery"></label>
+        <text style="margin-right: 15px;">Battery</text>
+        
+        <label id = "pv"></label>
+        <text style="margin-right: 15px;">PV</text>
+        
+        <label id = "pvhybridmode"></label>
+        <text style="margin-right: 15px;">PV Hybrid Mode</text> 
+
+        <input type="text" id="searchBox" class="searchbox" placeholder="Search by Parameter Name">
+
+        <button id = "excel" role = "button" class = "import-button">Import as Excel</button><br>
+
+    <form id="report-form" class="report-form">
+        <label for="engineer-select" style="font-weight: bold;">Site ID:</label>
+        <select id="rms">
+        <!--option value="ALL">ALL</option-->
+        <option value="">SELECT</option>
+        <option value="1">GP LAB TESTING1</option>
+        <option value="2">GP LAB TESTING2</option>
+        <option value="3">sonic-greenpole</option>
+        </select>
+
+        <label for="from-date" style="font-weight: bold;">From:</label>
+        <input type="datetime-local" id="from-date" name="from-date" class = "input" required>
+
+        <label for="to-date" style="font-weight: bold;">To:</label>
+        <input type="datetime-local" id="to-date" name="to-date" class = "input" required>
+
+         <button type = "button" role = "button" class = "generate-button" id="generate-excel">Generate Excel</button>
+    </form><br>
+
+        <label id="heading" style="font-weight: bold; margin-right: 50px;"></label>
+
+        <div id="tableContainer" style="display: flex; width: fit-content;"></div>
+
+    </div>
+    
+</body>
+</html>
+
